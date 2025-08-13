@@ -1,0 +1,105 @@
+1. Artificial Intelligence (AI)
+Price: ₹2,50,000 (10 months)
+Schedule: Mon, Wed, Fri – 8 PM to 10 PM IST
+Mode: Online live classes
+Prerequisites: Basic programming knowledge
+Special Offer: 10% off if enrolled before Aug 30
+Syllabus: AI fundamentals, ML core, NLP, Computer Vision, Project & Deployment
+Instructor: Dr. Alok Sharma – PhD IIT Bombay, 15+ years at NVIDIA & Microsoft
+Outcomes: Build/deploy AI models, projects in NLP & CV, job-ready portfolio
+Career Opportunities: AI Engineer, ML Scientist, CV Specialist at Amazon, Google, Microsoft, Uber
+
+⸻
+
+2. Machine Learning (ML)
+Price: ₹1,80,000 (8 months)
+Schedule: Tue, Thu – 7 PM to 9 PM IST; Sat – 10 AM to 1 PM IST
+Mode: Online live classes
+Prerequisites: Python basics
+Special Offer: 15% early-bird discount
+Syllabus: Python for ML, core ML algorithms, model evaluation, deep learning basics, projects
+Instructor: Deepa Nair – 12 years at Adobe & Flipkart, expert in recommendation engines
+Outcomes: Master ML pipeline, practical projects, algorithm expertise
+Career Opportunities: ML Engineer, Data Scientist at Myntra, Swiggy, Oracle
+
+⸻
+
+3. Generative AI
+Price: ₹1,50,000 (6 months)
+Schedule: Mon, Wed – 7:30 PM to 9:30 PM IST
+Mode: Online live classes
+Prerequisites: Python, basic ML knowledge
+Special Offer: Free LLM workshop worth ₹10,000
+Syllabus: Generative models, LLMs, prompt engineering, applications, ethics
+Instructor: Rohit Gupta – 10 years at Accenture in Generative AI projects
+Outcomes: Expertise in GANs, transformers, creative AI applications
+Career Opportunities: Prompt Engineer, Generative AI Developer, AI Research Assistant
+
+⸻
+
+4. Robotic Process Automation (RPA)
+Price: ₹1,20,000 (5 months)
+Schedule: Tue, Fri – 8 PM to 10 PM IST
+Mode: Online live classes
+Prerequisites: None
+Special Offer: Free UiPath certification voucher
+Syllabus: RPA fundamentals, tools (UiPath, Automation Anywhere), bot development, deployment
+Instructor: Pranav Deshmukh – 14 years in automation at TCS & Capgemini
+Outcomes: Build & deploy automation bots, process optimization skills
+Career Opportunities: RPA Developer, Automation Consultant in finance, healthcare, logistics
+
+⸻
+
+5. Software Development Engineer (SDE)
+Price: ₹2,80,000 (12 months)
+Schedule: Mon–Fri – 7 PM to 9 PM IST
+Mode: Online live classes
+Prerequisites: Basic programming knowledge
+Special Offer: Free mock interview package worth ₹15,000
+Syllabus: Programming (Java/Python), web dev, backend dev, system design, DevOps & Cloud
+Instructor: Vikram Singh – 13 years at Google & Adobe, system design expert
+Outcomes: Strong CS fundamentals, scalable backend systems, interview readiness
+Career Opportunities: Software Developer, Backend Engineer at Google, Amazon, Microsoft
+
+⸻
+
+6. Full Stack Development
+Price: ₹2,20,000 (9 months)
+Schedule: Mon, Tue, Thu – 8 PM to 10 PM IST; Sat – 1 PM to 4 PM IST
+Mode: Online live classes
+Prerequisites: Basic programming
+Special Offer: Free deployment workshop worth ₹5,000
+Syllabus: Frontend (HTML, CSS, JS, React/Angular), backend (Node.js, Express), DB (SQL, NoSQL), APIs, deployment
+Instructor: Priya Sharma – 11 years at Zomato & Ola, full-stack expert
+Outcomes: Build end-to-end apps, integrate frontend & backend, cloud deployment skills
+Career Opportunities: Full Stack Developer, Application Developer at Walmart, PayPal
+
+⸻
+
+7. Java & Python (Standalone)
+Price: ₹1,00,000 (6 months)
+
+Schedule:
+	Java: Mon, Wed, Fri – 7 PM to 9 PM IST
+	Python: Tue, Thu – 7 PM to 9 PM IST; Sun – 10 AM to 1 PM IST
+
+Mode: Online live classes
+Prerequisites: None
+Special Offer: Free coding challenge access
+Syllabus: Language fundamentals, OOP, advanced concepts, frameworks (Spring/Django/Flask)
+Instructor: Sanjay Kumar – 10 years at Paytm & PhonePe, backend development specialist
+Outcomes: Master Java or Python, build enterprise apps, write efficient code
+Career Opportunities: Java Developer, Python Developer in fintech, e-commerce, data science
+
+⸻
+
+8. Business Analyst (BA) & Data Analyst (DA)
+Price: ₹1,40,000 (6 months)
+Schedule: Tue, Thu – 7 PM to 9 PM IST
+Mode: Online live classes
+Prerequisites: None
+Special Offer: Free Power BI course worth ₹7,500
+Syllabus: BA principles (requirements, Agile), DA lifecycle, SQL, Excel, BI tools (Power BI, Tableau), analytics
+Instructor: Anjali Rao – 13 years at Deloitte & EY, data & business analysis expert
+Outcomes: Bridge business needs & data insights, storytelling with data, BI dashboard creation
+Career Opportunities: Business Analyst, Data Analyst, BI Analyst in consulting, IT, finance
