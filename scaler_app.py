@@ -6,22 +6,23 @@ from langchain.embeddings import SentenceTransformerEmbeddings
 from langchain.vectorstores import FAISS
 from groq import Groq
 
-# ===== 1️⃣ Load env & set page config =====
-st.set_page_config(page_title="Scaler Chatbot", page_icon="🎓")
+# App Configuration
+st.set_page_config(page_title="LeadGen Agent", page_icon="💬")
 load_dotenv()
 
-# Groq setup
+# Groq API Setup
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
 groq_client = Groq(api_key=GROQ_API_KEY)
 
-# Load FAISS
+
+# Load FAISS Vector Store
 embedding_model = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 vector_store = FAISS.load_local(
     "faiss_index", embedding_model, allow_dangerous_deserialization=True
 )
 
-# ===== SYSTEM PROMPT =====
+# System Prompt for AI Assistant
 SYSTEM_PROMPT = """
 You are Scaler’s friendly and knowledgeable course assistant.
 
@@ -35,9 +36,9 @@ Rules:
 7. Always maintain a polite and engaging tone, encouraging the user’s learning journey.
 """
 
-# ===== 2️⃣ Helper Functions =====
+# Helper Functions
 def ask_groq(prompt: str):
-    """Send a prompt to Groq's LLaMA model with system prompt and return the response."""
+    """Send a prompt to Groq LLaMA model and return AI-generated response."""
     chat_completion = groq_client.chat.completions.create(
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -49,15 +50,17 @@ def ask_groq(prompt: str):
     )
     return chat_completion.choices[0].message.content
 
+
 def search_rag(query: str):
-    """Search FAISS vector DB for relevant context."""
+    """Search FAISS DB for context relevant to the query."""
     docs = vector_store.similarity_search(query, k=2)
     if not docs:
         return None
     return "\n".join([doc.page_content for doc in docs])
 
-def save_contact_info(text):
-    """Extract and save email/phone numbers if present."""
+
+def save_contact_info(text: str):
+    """Extract and store email or phone number from AI response."""
     emails = re.findall(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", text)
     phones = re.findall(r"\+?\d[\d -]{8,12}\d", text)
 
@@ -69,14 +72,15 @@ def save_contact_info(text):
 
     return emails, phones
 
-def detect_potential_lead(user_query):
-    """Detect if the user's question suggests high interest in joining."""
+
+def detect_potential_lead(user_query: str):
+    """Check if the query indicates interest in joining a course."""
     lead_keywords = ["price", "fee", "fees", "cost", "join", "enroll", "admission", "register"]
-    query_lower = user_query.lower()
-    return any(keyword in query_lower for keyword in lead_keywords)
+    return any(keyword in user_query.lower() for keyword in lead_keywords)
+
 
 def handle_query(query: str):
-    """Main query handler — decides RAG or general LLM."""
+    """Route query through RAG if relevant, else to general AI."""
     context = search_rag(query)
     if context:
         prompt = f"Use the following course information to answer:\n\n{context}\n\nUser question: {query}"
@@ -87,21 +91,29 @@ def handle_query(query: str):
     save_contact_info(answer)
     return answer
 
-# ===== 3️⃣ Streamlit UI =====
-st.title("🎓 Scaler Chatbot")
-st.write("Ask me about our courses or anything else!")
+# Streamlit UI Layout
+st.title("LeadGen Agent")
 
-user_query = st.text_input("Enter your question:")
+st.markdown(
+    """
+    <div style="white-space: nowrap; font-size:16px;">
+        Ask away, from course fees to career paths, learning roadmaps to pure curiosity. It starts here.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+user_query = st.text_input("", placeholder="Go ahead, type it in — I’m here to help.")
 
 if user_query:
     with st.spinner("Thinking..."):
         response = handle_query(user_query)
     st.success(response)
 
-    # Lead detection and follow-up
+    # Lead capture section
     if detect_potential_lead(user_query):
         st.markdown("It seems you're interested in joining our course!")
-        contact_info = st.text_input("📩 Please share your email or phone number so we can send details:")
+        contact_info = st.text_input("Please share your email or phone number so we can send details:")
         if contact_info:
             with open("contacts.txt", "a", encoding="utf-8") as f:
                 f.write(f"Lead Contact: {contact_info}\n")
