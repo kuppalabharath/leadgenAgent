@@ -1,24 +1,20 @@
-# leadgen-chatbot
-An interactive, cross-device chatbot that blends natural conversation with accurate, context-aware answers. Detects user interest, captures leads, and works seamlessly as a shareable prototype — perfect for turning casual chats into meaningful connections.
+LeadGen Agent
 
-LeadGen – Conversational Lead Generation Prototype
+LeadGen Agent is a streamlined, cross-device chatbot designed to answer questions, provide relevant information, and help turn casual conversations into qualified leads. It blends a custom knowledge base with a powerful language model, ensuring accurate answers when the data is available and smooth, natural conversation when it’s not.
 
-LeadGen is a smart, domain-adaptable chatbot designed to engage users, provide precise information, and identify potential leads. It combines a Retrieval-Augmented Generation (RAG) pipeline for answering domain-specific questions with a general language model for broader, open-ended conversations.
-
-Features
-	•	Domain-specific accuracy – Retrieves relevant answers from a custom knowledge base.
-	•	Seamless fallback – Handles general queries outside the stored data.
-	•	Lead identification – Detects interest and requests user contact details for follow-up.
-	•	Structured retrieval – Powered by FAISS and sentence-transformer embeddings for fast and accurate matches.
+What It Does
+	•	Answers with context – Pulls information from a curated knowledge base using FAISS and sentence-transformer embeddings.
+	•	Keeps the conversation going – Falls back to Groq’s LLaMA model for general or open-ended questions.
+	•	Identifies potential leads – Detects when a user is showing interest and prompts for contact details.
+	•	Saves useful information – Stores collected leads locally for follow-up or integration into other systems.
 
 How It Works
-	1.	Context Retrieval – Finds the most relevant knowledge for a given query.
-	2.	Answer Generation – Uses Groq’s LLaMA model to produce clear, natural responses.
-	3.	Lead Capture – Prompts for contact details when user intent indicates strong interest.
-	4.	Data Logging – Stores captured lead details locally for follow-up actions.
+	1.	The user asks a question.
+	2.	The system searches the knowledge base for the most relevant context.
+	3.	If a match is found, it crafts an accurate, clear response.
+	4.	If not, the conversation continues through the language model.
+	5.	When intent suggests real interest, the agent requests contact details and logs them for future use.
 
-Potential Applications
-	•	Educational course inquiries
-	•	Product or service pre-sales
-	•	Customer onboarding assistance
-	•	Event registration and engagement
+
+
+
