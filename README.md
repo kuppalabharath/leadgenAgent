@@ -1,20 +1,21 @@
 LeadGen Agent
 
-LeadGen Agent is a streamlined, cross-device chatbot designed to answer questions, provide relevant information, and help turn casual conversations into qualified leads. It blends a custom knowledge base with a powerful language model, ensuring accurate answers when the data is available and smooth, natural conversation when it’s not.
+LeadGen Agent is not just a chatbot, it’s a smart lead-generating agent designed to interact naturally with users, provide accurate answers from your company’s knowledge base, and identify potential business opportunities. It combines Retrieval-Augmented Generation (RAG) with a vector database (VDB) to deliver precise, context-aware responses while capturing high-value leads based on user intent.
 
-What It Does
-	•	Answers with context – Pulls information from a curated knowledge base using FAISS and sentence-transformer embeddings.
-	•	Keeps the conversation going – Falls back to Groq’s LLaMA model for general or open-ended questions.
-	•	Identifies potential leads – Detects when a user is showing interest and prompts for contact details.
-	•	Saves useful information – Stores collected leads locally for follow-up or integration into other systems.
+Key Features
+	•	Context-Aware Responses – Uses FAISS and sentence-transformer embeddings to retrieve relevant information from your curated knowledge base, ensuring every answer is accurate and aligned with your company’s data.
+	•	Intelligent Fallback – When a query goes beyond the knowledge base, the system smoothly transitions to LLaMA model for natural, open-ended conversation.
+	•	Lead Detection & Capture – Analyzes user interactions to detect genuine interest and requests contact details only when intent signals a potential lead.
+	•	Secure & Confidential – Delivers sensitive company and product information confidently, while storing lead data locally for safe follow-up or system integration.
+	•	Cross-Device Accessibility – Works seamlessly across devices, keeping the conversation engaging wherever your users are.
 
 How It Works
-	1.	The user asks a question.
-	2.	The system searches the knowledge base for the most relevant context.
-	3.	If a match is found, it crafts an accurate, clear response.
-	4.	If not, the conversation continues through the language model.
-	5.	When intent suggests real interest, the agent requests contact details and logs them for future use.
+	1.	A user asks a question.
+	2.	The agent searches the knowledge base via RAG for the most relevant context.
+	3.	If context is found, it crafts an accurate, data-driven response.
+	4.	If not, the agent falls back to the language model for a natural conversation.
+	5.	When the interaction indicates real interest, the agent requests contact details and logs them securely for future engagement.
 
+Why It’s Different
 
-
-
+Unlike typical chatbots that only answer questions, LeadGen Agent is designed to generate value: it identifies potential leads, provides confidential and accurate company information, and ensures that every conversation contributes to business growth.
